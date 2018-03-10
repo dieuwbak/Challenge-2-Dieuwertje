@@ -16,7 +16,7 @@ body {
 	align-items: center;
 }
 
-div {
+#clock {
 	display: flex;
 	justify-content: center;
 	align-items: center;

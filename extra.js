@@ -1,6 +1,13 @@
 var beating = document.getElementById('clock');
 
 
-var tl = new TimelineMax({repeat:-1});
-tl.to(beating, 0.5, {height: 350, ease: Sine.easeIn})
-  .to(beating, 0.5, {height: 300, ease: Sine.easeOut});
+var tl1 = new TimelineMax();
+tl1.to(beating, 1, {height: 310, width: 310, ease: Sine.easeIn})
+  .to(beating, 1, {height: 300, width: 300, ease: Sine.easeOut});
+
+
+function background() {
+	if (hour<18) {
+		document.getElementsByTagName("html").style.background-image = 'url(background/evening.jpg)'
+	}
+}
