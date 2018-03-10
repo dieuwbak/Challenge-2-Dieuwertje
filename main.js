@@ -1,3 +1,4 @@
+
 // Isource: http://cssdeck.com/labs/minimal-css3-digital-clock
 
 (function() {
@@ -28,3 +29,4 @@
 	
 
 }());
+
