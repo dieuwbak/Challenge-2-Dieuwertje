@@ -33,14 +33,19 @@ function changeBackground() {
 
     if (hour >=7 && hour <=11) {
     	document.body.style.backgroundImage = 'url(background/morning.jpg)';
+    	document.getElementById('message').innerHTML = "Morning, rise and shine!";
     }
 	else if (hour >=12 && hour <=18) {
     	document.body.style.backgroundImage = 'url(background/day.jpg)';
+    	document.getElementById('message').innerHTML = "It's a beatiful day";
     }
     else if (hour >=19 && hour <=22) {
     	document.body.style.backgroundImage = 'url(background/evening.jpg)';
+    	document.getElementById('message').innerHTML = "Have a good evening";
     }
     else {
     	document.body.style.backgroundImage = 'url(background/night.jpg)';
+    	document.getElementById('message').innerHTML = "Sweet dreams";
     }
 }
+
