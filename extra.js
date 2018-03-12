@@ -31,16 +31,16 @@ function changeBackground() {
     var hour = today.getSeconds();
 
 
-    if (hour >=18 && hour <=22) {
-    	document.body.style.backgroundImage = 'url(background/evening.jpg)';
-    }
-    else if (hour >=23 || hour <=5) {
-    	document.body.style.backgroundImage = 'url(background/night.jpg)';
-    }
-    else if (hour >=6 && hour <=11) {
+    if (hour >=7 && hour <=11) {
     	document.body.style.backgroundImage = 'url(background/morning.jpg)';
     }
-	else {
+	else if (hour >=12 && hour <=18) {
     	document.body.style.backgroundImage = 'url(background/day.jpg)';
+    }
+    else if (hour >=19 && hour <=22) {
+    	document.body.style.backgroundImage = 'url(background/evening.jpg)';
+    }
+    else {
+    	document.body.style.backgroundImage = 'url(background/night.jpg)';
     }
 }
