@@ -28,14 +28,19 @@ timeline.call(startTime)
 
 function changeBackground() {
 	var today = new Date();
-    var hour = today.getHours();
+    var hour = today.getSeconds();
 
-	console.log(hour);
 
-    if (hour <= 15) {
-    	document.body.style.backgroundColor = 'red';
+    if (hour >=18 && hour <=22) {
+    	document.body.style.backgroundImage = 'url(background/evening.jpg)';
     }
-    else {
-    	document.body.style.backgroundColor = 'green';
+    else if (hour >=23 || hour <=5) {
+    	document.body.style.backgroundImage = 'url(background/night.jpg)';
+    }
+    else if (hour >=6 && hour <=11) {
+    	document.body.style.backgroundImage = 'url(background/morning.jpg)';
+    }
+	else {
+    	document.body.style.backgroundImage = 'url(background/day.jpg)';
     }
 }
