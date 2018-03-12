@@ -1,4 +1,6 @@
-document.getElementById("body").onload = function startTime() {
+var timeline = new TimelineMax({repeat: -1});
+
+function startTime() {
 	    var today = new Date();
 	    var h = today.getHours();
 	    var m = today.getMinutes();
@@ -7,10 +9,17 @@ document.getElementById("body").onload = function startTime() {
 	    s = checkTime(s);
 	    document.getElementById('clock').innerHTML =
 	    h + ":" + m + ":" + s;
-	    var t = setTimeout(startTime, 500);}
+}
 
 function checkTime(i) {
     	if (i < 10) {i = "0" + i};  
     	return i;
 }
 
+
+
+var animation = document.getElementById('clock');	
+
+timeline.call(startTime)
+		.to(animation, 0.5, {fontSize: '3em'})
+		.from(animation, 0.5, {fontSize: '2.7em'});
