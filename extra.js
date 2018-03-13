@@ -25,12 +25,6 @@ timeline.call(startTime)
 		.to(animation, 0.7, {fontSize: '20vw', ease: Bounce.easeIn})
 		.from(animation, 0.3, {fontSize: '19vw', ease: Sine.easeIn});
 
- 		
-/*var flip = new TimelineMax({repeat : -1});
-
-tl2.from('#clock', 0.7, { top: -100, ease: Bounce.easeOut})
-	.to('#clock', 0.3, { opacity: 0})*/
-
 
 
 function changeBackground() {

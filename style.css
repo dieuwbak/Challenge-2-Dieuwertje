@@ -4,8 +4,27 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 805px;
-	justify-content: center;
 	align-items: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+#message {
+	position: absolute;
+	margin-top: 50%;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+	body {
+		justify-content: center;
+	}
+	#message {
+		margin-top: 20%;
+	}
+}
+
+@media only screen and (min-width: 1001px) {
+	body {
+		font-size: 30%;
+	}
 }
