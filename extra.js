@@ -38,7 +38,7 @@ function changeBackground() {
     }
 	else if (hour >=12 && hour <=18) {
     	document.body.style.backgroundImage = 'url(background/day.jpg)';
-    	document.getElementById('message').innerHTML = "It's a beatiful day";
+    	document.getElementById('message').innerHTML = "It's a beautiful day";
     }
     else if (hour >=19 && hour <=22) {
     	document.body.style.backgroundImage = 'url(background/evening.jpg)';
